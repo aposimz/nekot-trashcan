@@ -71,16 +71,16 @@ local function registerZones()
                     options = {
                         {
                             type = 'server',
-                            event = 'trash:clear',
-                            icon = 'fa-solid fa-trash',
-                            label = '削除',
+                            event = 'trash:requestOpen',
+                            icon = 'fa-solid fa-box',
+                            label = '開く',
                             id = bin.id
                         },
                         {
                             type = 'server',
-                            event = 'trash:requestOpen',
-                            icon = 'fa-solid fa-box',
-                            label = '開く',
+                            event = 'trash:clear',
+                            icon = 'fa-solid fa-trash',
+                            label = '削除',
                             id = bin.id
                         }
                     },
@@ -107,17 +107,17 @@ local function registerZones()
                 {
                     options = {
                         {
-                            type = 'server',
-                            event = 'trash:clear',
-                            icon = 'fa-solid fa-trash',
-                            label = '削除',
-                            id = bin.id
-                        },
-                        {
+                            {
                             type = 'server',
                             event = 'trash:requestOpen',
                             icon = 'fa-solid fa-box',
                             label = '開く',
+                            id = bin.id
+                            },
+                            type = 'server',
+                            event = 'trash:clear',
+                            icon = 'fa-solid fa-trash',
+                            label = '削除',
                             id = bin.id
                         }
                     },
